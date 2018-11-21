@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ***************************************************************************************
+    Title: Login and Sigup with local DB configuration in android
+    Author: Anbarasi1993
+    Date: 2016
+    Type: Source Code
+    Availability: https://github.com/Anbarasi1993/LoginSignupAppZoho
+
+    ***************************************************************************************/
+    -->
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rahul.Wireshark.LoginSignup.LoginSignupActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/Layout_rahul_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/T_rahul_Login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/T_rahul_Signup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SignUp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L_rahul_Login"
+            android:layout_width="382dp"
+            android:layout_height="405dp"
+            android:layout_below="@+id/Layout_rahul_Main"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EditT_rahul_Email"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Email"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/EditT_rahul_Password"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/B_rahul_LoginAction"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Login" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/L_rahul_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Layout_rahul_Main"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/EditT_rahul_RegisterName"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Name"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/EditT_rahul_RegisterEmail"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Email"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/EditT_rahul_RegisterPassword"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/EditT_rahul_RegisterContactNumber"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Conatct Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/B_rahul_RegisterAction"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Create a Account" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
